@@ -48,11 +48,8 @@ Dockerfile indirelim:
 Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account oluşturalım.
 
 İçersine girelim
-
-```
         nano Dockerfile
 ```
-
 
 > İçersinde ki Validatör ismi, private key ve cüzdan adresi güncelleyelim.
 > Tilkimask Private key alma: Sağdan üç nokta => Hesap bilgileri => Özel anahtarı al
