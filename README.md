@@ -41,14 +41,13 @@ Burası Tek Komut
 ```
 
 Dockerfile indirelim:
-
+```
         wget https://files.elixir.finance/Dockerfile
 ```
 
 Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account oluşturalım.
 İçersine girelim
-
-
+```
         nano Dockerfile
 ```
 
@@ -62,12 +61,11 @@ Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account 
 
 Node başlatma
 İmage oluşturalım:
-
+```
         docker build . -f Dockerfile -t elixir-validator
 ```
 
 Node calıştırma:
-
 ```
         screen -S elixir
         docker run -it --name ev elixir-validator
