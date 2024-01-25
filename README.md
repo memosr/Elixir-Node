@@ -20,7 +20,9 @@ Docker Kurulumu
 
     for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
-Devam...
+```
+
+```console
     
     sudo apt-get update
     sudo apt-get install ca-certificates curl gnupg
