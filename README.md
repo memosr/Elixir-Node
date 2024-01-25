@@ -42,6 +42,7 @@ Burası Tek Komut
 
 Dockerfile indirelim:
 
+
         wget https://files.elixir.finance/Dockerfile
 ```
 
@@ -67,6 +68,7 @@ Node başlatma
 ```
 
 Node calıştırma:
+
 
         screen -S elixir
         docker run -it --name ev elixir-validator
