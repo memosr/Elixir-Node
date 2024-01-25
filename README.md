@@ -47,6 +47,7 @@ Dockerfile indirelim:
         wget https://files.elixir.finance/Dockerfile
 ```
 
+
 Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account oluşturalım.
 
 İçersine girelim
