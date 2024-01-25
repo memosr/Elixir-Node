@@ -48,7 +48,7 @@ Dockerfile indirelim:
 
 Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account oluşturalım.
 İçersine girelim
-```
+
         nano Dockerfile
 ```
 
