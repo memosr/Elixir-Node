@@ -28,7 +28,7 @@ Docker Kurulumu
 ```
 
 Burası Tek Komut
-
+```
         echo \
           "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
           "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
@@ -49,24 +49,26 @@ Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account 
 
 İçersine girelim
 
+```
         nano Dockerfile
 ```
+
 
 > İçersinde ki Validatör ismi, private key ve cüzdan adresi güncelleyelim.
 > Tilkimask Private key alma: Sağdan üç nokta => Hesap bilgileri => Özel anahtarı al
 > Bilgilerimizi doldurduktan sonra sunucumuzda CTRL X Y ENTER ile kaydedebiliriz.
-```
+
 
 Node başlatma
 İmage oluşturalım:
 
-
+```
         docker build . -f Dockerfile -t elixir-validator
 ```
 
 Node calıştırma:
-```
 
+```
         screen -S elixir
         docker run -it --name ev elixir-validator
 ```
