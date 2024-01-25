@@ -45,12 +45,13 @@ Dockerfile indirelim:
         wget https://files.elixir.finance/Dockerfile
 ```
 
-
 Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account oluşturalım.
 İçersine girelim
 
+
         nano Dockerfile
 ```
+
 
 > İçersinde ki Validatör ismi, private key ve cüzdan adresi güncelleyelim.
 
@@ -62,7 +63,6 @@ Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account 
 Node başlatma
 İmage oluşturalım:
 
-```
         docker build . -f Dockerfile -t elixir-validator
 ```
 
