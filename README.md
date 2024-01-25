@@ -40,31 +40,35 @@ Burası Tek Komut
         sudo docker run hello-world
 ```
 
-```console
-# Dockerfile indirelim:
-wget https://files.elixir.finance/Dockerfile
-# Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account oluşturalım.
 
-# içersine girelim
-nano Dockerfile
-# İçersinde ki Validatör ismi, private key ve cüzdan adresi güncelleyelim.
+Dockerfile indirelim:
 
-# Tilkimask Private key alma: Sağdan üç nokta => Hesap bilgileri => Özel anahtarı al
-# Bilgilerimizi doldurduktan sonra sunucumuzda CTRL X Y ENTER ile kaydedebiliriz.
+        wget https://files.elixir.finance/Dockerfile
+
+Bu aşamada HİÇ kullanılmamış ve kullanmayacağımız bir metamask account oluşturalım.
+
+İçersine girelim
+
+        nano Dockerfile
+
+İçersinde ki Validatör ismi, private key ve cüzdan adresi güncelleyelim.
+
+Tilkimask Private key alma: Sağdan üç nokta => Hesap bilgileri => Özel anahtarı al
+Bilgilerimizi doldurduktan sonra sunucumuzda CTRL X Y ENTER ile kaydedebiliriz.
 ```
 
-# Node başlatma
+Node başlatma
 
-```console
-# image oluşturalım:
-docker build . -f Dockerfile -t elixir-validator
+İmage oluşturalım:
 
-# Node calıştırma:
-screen -S elixir
-docker run -it --name ev elixir-validator
+        docker build . -f Dockerfile -t elixir-validator
+
+Node calıştırma:
+        screen -S elixir
+        docker run -it --name ev elixir-validator
 ```
 
-# Validator
+Validator
 
 > Son olarak [Buradan](https://dashboard.elixir.finance/) cüzdanınızı bağlayın ve 1000 elixir token claim edin.
 
